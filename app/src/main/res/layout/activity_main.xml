@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroung"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:paddingStart="20dp"
+    android:paddingLeft="20dp"
+    android:paddingTop="20dp"
+    android:paddingEnd="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="20dp"
+    android:textAlignment="gravity"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/titre"
+        android:layout_width="364dp"
+        android:layout_height="168dp"
+        android:fontFamily="@font/playfair_display"
+        android:padding="30dp"
+        android:paddingStart="30dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="30dp"
+        android:paddingEnd="30dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="30dp"
+        android:text="Mesure de niveau de glycémie"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="364dp"
+        android:layout_height="wrap_content"
+        android:text="Votre Age: "
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <SeekBar
+        android:id="@+id/sbAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:max="120" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#000000" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="364dp"
+        android:layout_height="wrap_content"
+        android:text="Est-ce que vous jeûnez ?"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbtOui"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="Oui"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rbtNon"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Non"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:ems="10"
+        android:hint="Valeur mesurée (en mmol/l)"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btnConsulter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="Consulter"
+        android:layout_marginTop="50dp"
+        android:textSize="18sp"/>
+
+</LinearLayout>
